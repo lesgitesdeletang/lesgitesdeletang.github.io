@@ -9,7 +9,7 @@ const websiteSettings = {
 	mapPosition: {
 		lat: 48.134390, 
 		lng: 6.762618,
-		zoom: 10
+		zoom: 5
 	},
 	
 	googleAPIKey: "AIzaSyDmHwsNI5OJRcJXQQ0KKjCoPOlEjw3NjfY",
