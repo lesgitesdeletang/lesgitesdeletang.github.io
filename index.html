@@ -33,20 +33,32 @@
 	
 	<body ng-controller="bodyController">
 		
-		<navbar></navbar>
+		<nav class="white" role="navigation">
+			<div class="nav-wrapper container">
+				<a id="logo-container" href="#" class="brand-logo">
+					<img id="logo-image" src="images/logo.svg"/>
+				</a>
+				<ul class="right hide-on-med-and-down">
+					<li><a class ="navbarmenuitem" href="#who">Who</a></li>
+					<li><a class ="navbarmenuitem" href="#what">What</a></li>
+					<li><a class ="navbarmenuitem" href="#where">Where</a></li>
+				</ul>
+				
+			</div>
+		</nav>
 		
-		<parallaximage id="'first'" imagesrc="'images/parallax1.jpg'" imagealt="'myalt'">
+		<parallaximage id="'first'" imagesrc="'images/parallax1.jpg?c=ldfgldkfghl'" imagealt="'myalt'">
 			<h1 class="header center">Les Gîtes de l'Etang</h1>
 			<div class="row center">
-				<h5 class="header col s12 light">Experience the wonders that rural France can offer<h5>
-				<h5 class="header col s12 light">Enjoy the charm and warmth of the Vosges where you can spend your vacation at your own pace and according to your wishes.<h5>
+				<h5 class="header col s12 light">Discover the wonders of cycling in France's hidden paradise<h5>
+				<h5 class="header col s12 light">Enjoy five star luxury and fully guided routes as you explore the Vosges' gorgeous roads<h5>
 			</div>
 		</parallaximage>
 		
 		<parallaxcard id="'who'">
 			<div class="row">
-				<div class="col s12 m4"><img src="https://dummyimage.com/512x512/adadad/ffffff.png&text=Picture+of+Owners" alt="" class="giteimage circle responsive-img"/></div>
-				<div class="col s12 m8">
+				<div class="col s12 m3"><img src="https://dummyimage.com/512x512/adadad/ffffff.png&text=Image+of+Phil+and+MarieAndre" alt="" class="giteimage circle responsive-img"/></div>
+				<div class="col s12 m9">
 					<h2>Who are we</h2>
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sapien odio, tincidunt non sem a, vestibulum vestibulum velit. Nunc bibendum diam quis convallis hendrerit. Fusce posuere a urna ac euismod. In hac habitasse platea dictumst. Aenean blandit risus ut commodo tempus. Sed at mauris ultricies, iaculis metus vehicula, dictum nulla. Nam ac bibendum est. Integer ultricies id nisi eu euismod. Nullam sapien mauris, maximus quis enim sagittis, scelerisque aliquet diam. Donec elementum erat vitae orci pellentesque maximus. Nullam rhoncus leo eget dapibus gravida. Suspendisse sed lacus pellentesque, dignissim mauris a, congue nulla. Cras et suscipit augue. Nulla pretium ex felis, in interdum eros suscipit sit amet. Nam mauris tellus, vehicula et auctor nec, fermentum non felis.
@@ -56,7 +68,11 @@
 		</parallaxcard>
 		
 		<parallaximage id="'second'" imagesrc="'images/7.jpg'" imagealt="'myalt'">
-			TESTING TESTING TESTING
+			<div class="row">
+				<div class="col s12 m3">
+				Liezey, France
+				</div>
+			</div>
 		</parallaximage>
 		
 		<parallaxcard id="'what'">
@@ -64,45 +80,31 @@
 				<div class="col s12">
 					<h2 class="center center-align">What do we offer?</h2>
 					<p class="center-align">
-						All our gites are easily accessible and are open all year in the village of Champdray on a plateau on the edge of the Ballons des Vosges National Park. In an exceptional location nestled in the landscape, you have a particularly healthy environment throughout the year. At the heart of an authentic late 18th century Vosgien farm the, tastefully renovated with passion and in perfect harmony with nature, come and enjoy the privacy and comfort to relax. <br>We offer 3 gites, The Forester, The Quarrier and The Weaver, all of which have WiFi.
+						All our gites are easily accessible and are open all year in the village of Champdray on a plateau on the edge of the Ballons des Vosges National Park. 
 					</p>
 				</div>
 				
-				<div class="col s4">
+				<div class="col s12 m4">
 					<h4 class = "center center-align">The Forester</h4>
 					<img src="https://dummyimage.com/256x256/949494/ffffff.png&text=GITE+PICTURE" alt="" class="giteimage circle responsive-img"/>
 					<p class = "center center-align">
-						A very large Gite designed for 10 people and ground floor bedroom with wheelchair access this delightful and exclusive development will not leave you indifferent.
-						<br><br>
-						Accessed from the Entrance Hospitality Room the ground floor includes a corridor leading to a large 45m² living room / dining room and fully equipped open plan kitchen (an American fridge, multifunction oven: grill, convection oven, microwave, induction hob, dishwasher, espresso coffee maker, dishes and kitchen utensils). The warm colours, dark woods and soft lines make up a modern, open and relaxing environment. A leather sofa corner, LCD TV and DVD complete the facilities.
-						<br><br>
-						A bedroom suitable for guests with reduced mobility with its en-suite Italian shower adjoins the lounge.
-						A large staircase leads towards 3 elegant and comfortable bedrooms.
-						Each room has its own en-suite toilet and bathroom with shower or bath.
-						<br><br>
-						Outside a private terrace with garden furniture and a barbecue is available so that you can enjoy the view, the calm and the surrounding countryside, since you are surrounded by fields.
+						A very large Gite designed for 10 people and ground floor bedroom with wheelchair access this delightful and exclusive development will not leave you indifferent.					
 					</p>
 				</div>
 				
-				<div class="col s4">
+				<div class="col s12 m4">
 					<h4 class = "center center-align">The Quarrier</h4>
 					<img src="https://dummyimage.com/256x256/949494/ffffff.png&text=GITE+PICTURE" alt="" class="giteimage circle responsive-img"/>
 					<p class = "center center-align">
-						Enter through a large door off of the Entrance Hospitality Room this gite is fully accessible to wheelchair users. The "open plan" kitchen /diner fully equipped with a round table and chairs, a cupboard, refrigerator, dishwasher, microwave, induction hob, an espresso coffee maker, dishes and kitchen utensils. From this is access to a comfortable lounge (flat screen TV, DVD, and Stereo system) with a wood stove.
-						<br><br>
-						The 2 bedrooms are spacious and luxurious, each equipped with a double bed (one of which may be converted into two single beds) two bedside tables and a wardrobe that will enhance your comfort during your stay. Each bedroom has an en-suite bathroom with Italian shower, basin and toilet and the bath towels are provided.
-						<br><br>
-						Outside a private terrace with garden furniture and a barbecue is available so that you can enjoy the view, the calm and the surrounding countryside.
+						Enter through a large door off of the Entrance Hospitality Room this gite is fully accessible to wheelchair users. The "open plan" kitchen /diner fully equipped with a round table and chairs, a cupboard, refrigerator, dishwasher, microwave, induction hob, an espresso coffee maker, dishes and kitchen utensils.
 					</p>
 				</div>
 				
-				<div class="col s4">
+				<div class="col s12 m4">
 					<h4 class = "center center-align">The Weaver</h4>
 					<img src="https://dummyimage.com/256x256/949494/ffffff.png&text=GITE+PICTURE" alt="" class="giteimage circle responsive-img"/>
 					<p class = "center center-align">
-						Enter this gite through a large door that opens to a "open plan" kitchen /diner  fully equipped with a round table and chairs, a cupboard, refrigerator, dishwasher, microwave, induction hob, an espresso coffee maker, dishes and kitchen utensils. From this is access to a comfortable lounge (flat screen TV, DVD, and Stereo system) with a wood stove.
-						<br><br>
-						The 2 bedrooms are spacious and luxurious, each equipped with a double bed (one of which may be converted into two single beds) two bedside tables and a wardrobe that will enhance your comfort during your stay. Each bedroom has an en-suite bathroom with shower, basin and toilet and the bath towels are provided.
+						Enter this gite through a large door that opens to a "open plan" kitchen /diner  fully equipped with a round table and chairs, a cupboard, refrigerator, dishwasher, microwave, induction hob, an espresso coffee maker, dishes and kitchen utensils.
 					</p>
 				</div>
 				
@@ -111,7 +113,7 @@
 		</parallaxcard>
 		
 		<parallaximage id="'third'" imagesrc="'images/8.jpg'" imagealt="'myalt'">
-			TESTING TESTING TESTING
+			An old bloke on his bike enjoys the local scenery on an Autumn morning
 		</parallaximage>
 		
 		<parallaxcard id="'where'">
@@ -125,6 +127,10 @@
 				</div>
 			</div>
 		</parallaxcard>
+		
+		<parallaximage id="'fourth'" imagesrc="'images/parallax9.jpg'" imagealt="'myalt'">
+			Another nearby road
+		</parallaximage>
 		
 		<ng-include src="footerTemplateURL"></ng-include>
 		

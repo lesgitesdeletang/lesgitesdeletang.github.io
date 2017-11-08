@@ -11,27 +11,6 @@ var bodyController = app.controller('bodyController', function($scope, $http){
 	$scope.footerTemplateURL = websiteSettings.templates.footer;
 });
 
-bodyController.directive('navbar', function(){
-	return {
-		restrict: 'E',
-		templateUrl: websiteSettings.templates.navbar,
-		transclude: false,
-		scope: {
-		},
-		link: function($scope, element, attrs){
-			$(element).find(".navbarmenuitem").click(function(eventObj){
-				
-				eventObj.preventDefault();
-				$($(this).attr("href"))[ 0 ].scrollIntoView({
-					behavior: "smooth"
-				})
-				
-			});
-		}
-	}
-	
-});
-
 bodyController.directive('parallaximage', function(){
 	return {
 		restrict: 'E',
@@ -79,4 +58,17 @@ bodyController.directive('mapobject', function(){
 		}
 	}
 	
+});
+
+$(document).ready(function(){
+	$(".navbarmenuitem").click(function(eventObj){
+		
+		eventObj.preventDefault();
+		$($(this).attr("href"))[ 0 ].scrollIntoView({
+			behavior: "smooth",
+			block: "start"
+		})
+		
+	});
+
 });

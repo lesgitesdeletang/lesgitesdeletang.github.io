@@ -37,3 +37,8 @@ p {
 	display: block;
 	margin: 0 auto;
 }
+
+#first .parallax img {
+	/*-webkit-filter: blur(4px);*/
+	
+}
