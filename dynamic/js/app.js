@@ -22,7 +22,7 @@ bodyController.directive('parallaximage', function(){
 			imagealt: "=",
 		},
 		link: function($scope, element, attrs){
-			//$('.parallax').parallax();
+			$('.parallax').parallax();
 		}
 	}
 	
