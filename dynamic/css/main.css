@@ -1,0 +1,67 @@
+body, html {
+    height: 100%;
+}
+
+nav ul a, nav .brand-logo {
+	color: #444;
+}
+
+p {
+	line-height: 2rem;
+}
+
+.button-collapse {
+	color: #26a69a;
+}
+
+.parallax-container {
+	z-index:1;
+	min-height: 600px;
+	height: auto;
+	
+	
+	color: rgb(255,255,255);
+	
+	padding-top: 100px;
+	text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
+	
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+div#first.parallax-container{
+	background-image: url("../images/parallax1.jpg");
+}
+
+div#second.parallax-container{
+	background-image: url("../images/7.jpg");
+}
+
+
+div#third.parallax-container{
+	background-image: url("../images/8.jpg");
+}
+
+div#fourth.parallax-container{
+	background-image: url("../images/parallax9.jpg");
+}
+
+.parallax-container .section {
+	width: 100%;
+}
+
+#map {
+	height: 400px;
+	width: 100%;
+}
+
+#logo-image{
+	height: 64px;
+}
+
+.giteimage{
+	display: block;
+	margin: 0 auto;
+}

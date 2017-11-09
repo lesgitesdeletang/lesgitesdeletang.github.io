@@ -22,7 +22,7 @@ bodyController.directive('parallaximage', function(){
 			imagealt: "=",
 		},
 		link: function($scope, element, attrs){
-			//$('.parallax').parallax();
+			$('.parallax').parallax();
 		}
 	}
 	
@@ -70,7 +70,7 @@ $(document).ready(function(){
 		})
 		
 	});
-	
+	/*
 	if(navigator.userAgent.match(/Trident\/7\./)) { // if IE
 		$('body').on("mousewheel", function () {
 			// remove default behavior
@@ -82,6 +82,6 @@ $(document).ready(function(){
 			window.scrollTo(0, currentScrollPosition - wheelDelta);
 		});
 	}
-
+*/
 });
 
